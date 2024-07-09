@@ -1,5 +1,4 @@
 # SSAFY 12기 대전 알고리즘 스터디 📝
-
 ![img](./.source/logo.png)
 ---
 ## ✅ 참여 방법
