@@ -1,7 +1,6 @@
 # SSAFY 12기 대전 알고리즘 스터디 📝
 
 <br />
-<br />
 
 ![img](./.source/logo.png)
 ---
