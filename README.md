@@ -82,5 +82,7 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 
 ### 기타 문서
 - [깃 사용법](https://gin-girin-grim.tistory.com/10)
+  
+<br />
 
 **해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**
