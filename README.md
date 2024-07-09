@@ -75,10 +75,11 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 - [이것이 취업을 위한 코딩 테스트다 with 파이썬](https://www.yes24.com/Product/Goods/91433923)
 
 ### BOJ
-- [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md)의 알고리즘 별 백준 문제 풀기
+- [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture)의 알고리즘 별 백준 문제 풀기
+- [코드 플러스](https://www.acmicpc.net/lectures)
 
 ### Programmers
-- [프로그래머스](https://school.programmers.co.kr/learn/challenges?tab=all_challenges&order=acceptance_desc&page=2&languages=python3&levels=2%2C3)의 Level 2, 3 문제를 정확도 높은순으로 정렬하여 60프로 이하의 정답률을 가지는 문제 풀기
+- [프로그래머스](https://school.programmers.co.kr/learn/challenges?tab=all_challenges&order=acceptance_desc&page=2&languages=python3&levels=2%2C3)
 
 ### 코테 집중 주간
 - [삼성 코테 대비 - 코드트리](https://www.codetree.ai/training-field/frequent-problems/company/samsung/problems)
