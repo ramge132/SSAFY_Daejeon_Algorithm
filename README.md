@@ -72,6 +72,5 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 ### 코테 집중 주간
 - [삼성 코테 대비 - 코드트리](https://www.codetree.ai/training-field/frequent-problems/company/samsung/problems)
 
-해당 레포지토리는 Da-in님의 Repo를 기반으로 재구성하였습니다.
 
-**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study)와 [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**
+**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**
