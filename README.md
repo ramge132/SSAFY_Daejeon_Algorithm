@@ -77,7 +77,7 @@ git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.ne
 ### BOJ
 - [solved.ac](https://solved.ac/problems/level)
 - [코드 플러스](https://www.acmicpc.net/lectures)
-- [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture)의 알고리즘 별 백준 문제 풀기 (C,C++)
+- [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture) (C,C++)
 
 ### Programmers
 - [프로그래머스](https://school.programmers.co.kr/learn/challenges?tab=all_challenges&order=acceptance_desc&page=2&languages=python3&levels=2%2C3)
