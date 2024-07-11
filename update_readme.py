@@ -5,7 +5,7 @@ from github import Github
 GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
 if not GITHUB_TOKEN:
     raise ValueError("GITHUB_TOKEN environment variable is not set.")
-REPO_NAME = "ramge132/SSAFY_Daejeon_Algorithm"  # 저장소 이름으로 변경
+REPO_NAME = "YOUR_USERNAME/YOUR_REPOSITORY"  # 저장소 이름으로 변경
 
 # GitHub 클라이언트 초기화
 g = Github(GITHUB_TOKEN)
@@ -26,19 +26,22 @@ for contributor in contributors:
 readme = repo.get_readme()
 readme_content = readme.decoded_content.decode('utf-8')
 
-# 기존 기여자 섹션 삭제 및 새로운 내용 준비
-start = readme_content.find("## ✅ 참여자와 진행도")
-end = readme_content.find("## ✅ 소스코드 파일 이름 규칙")
+# 기존 기여자 섹션을 찾아서 삭제하고 새로운 내용 준비
+start_marker = "## ✅ 참여자와 진행도"
+end_marker = "## ✅ 소스코드 파일 이름 규칙"
+start = readme_content.find(start_marker)
+end = readme_content.find(end_marker)
+
 if start == -1 or end == -1:
     raise ValueError("README.md does not contain the expected sections")
 
 # 새로운 기여자 섹션 생성
-new_contributors_section = "## ✅ 참여자와 진행도\n\n"
+new_contributors_section = start_marker + "\n\n"
 for login, level in contributor_data:
     new_contributors_section += f"- {login} (Level: {level})\n"
 
-# 기존 내용 갱신
-new_readme_content = readme_content[:start] + new_contributors_section + readme_content[end:]
+# 기존 내용에서 기여자 섹션을 갱신
+new_readme_content = readme_content[:start] + new_contributors_section + "\n" + readme_content[end:]
 
 # 업데이트된 README.md 파일 커밋 및 푸시
 repo.update_file(readme.path, "Update README with contributors", new_readme_content, readme.sha)
