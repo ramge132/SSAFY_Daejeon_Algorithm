@@ -72,7 +72,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <br />
 <br />
 
-## 📂 Document
+## 📂 관련 문서
 ### 교재
 - [바킹독의 실전 알고리즘 강의](https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)
 - [이것이 취업을 위한 코딩 테스트다 with 파이썬](https://www.yes24.com/Product/Goods/91433923)
@@ -97,7 +97,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <br />
 <br />
 
-## 🎖️ Level
+## 🎖️ 레벨
 
 <table>
 <tr>
@@ -125,6 +125,9 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <br />
 <br />
 <br />
+<br />
+<br />
+
 
 
 **해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**
