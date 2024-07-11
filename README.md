@@ -112,7 +112,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
       <sub><b>ramge132</b></sub>
     </a>
     <br />
-    <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>
+    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
     <a href="https://github.com/Daekyue">
