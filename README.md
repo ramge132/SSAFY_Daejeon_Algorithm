@@ -101,8 +101,22 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
 <table>
 <tr>
-  <td align="center"><a href="https://github.com/ramge132"><img src="https://avatars.githubusercontent.com/u/ramge132?v=4" width="100px;" alt=""/><br /><sub><b>ramge132</b></sub></a><br />Level: 2</td>
-  <td align="center"><a href="https://github.com/Daekyue"><img src="https://avatars.githubusercontent.com/u/Daekyue?v=4" width="100px;" alt=""/><br /><sub><b>Daekyue</b></sub></a><br />Level: 1</td>
+  <td align="center">
+    <a href="https://github.com/ramge132">
+      <img src="https://avatars.githubusercontent.com/u/ramge132?v=4" width="100px;" alt=""/><br />
+      <sub><b>ramge132</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>
+  </td>
+  <td align="center">
+    <a href="https://github.com/Daekyue">
+      <img src="https://avatars.githubusercontent.com/u/Daekyue?v=4" width="100px;" alt=""/><br />
+      <sub><b>Daekyue</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
+  </td>
 </tr>
 </table>
 
