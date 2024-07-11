@@ -5,7 +5,7 @@ from github import Github
 GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
 if not GITHUB_TOKEN:
     raise ValueError("GITHUB_TOKEN environment variable is not set.")
-REPO_NAME = "ramge132/SSAFY_Daejeon_Algorithm" 
+REPO_NAME = "YOUR_USERNAME/YOUR_REPOSITORY"  # 저장소 이름으로 변경
 
 # GitHub 클라이언트 초기화
 g = Github(GITHUB_TOKEN)
@@ -39,7 +39,8 @@ readme_content = readme.decoded_content.decode('utf-8')
 
 # 기존 기여자 섹션을 찾아서 삭제하고 새로운 내용 준비
 start_marker = "## ✅ 참여자와 진행도"
-end_marker = "## ✅ 소스코드 파일 이름 규칙"
+end_marker = "**해당 레포지토리는"
+
 start = readme_content.find(start_marker)
 end = readme_content.find(end_marker)
 
