@@ -5,7 +5,7 @@ from github import Github
 GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
 if not GITHUB_TOKEN:
     raise ValueError("GITHUB_TOKEN environment variable is not set.")
-REPO_NAME = "YOUR_USERNAME/YOUR_REPOSITORY"  # 저장소 이름으로 변경
+REPO_NAME = "ramge132/SSAFY_Daejeon_Algorithm" 
 
 # GitHub 클라이언트 초기화
 g = Github(GITHUB_TOKEN)
