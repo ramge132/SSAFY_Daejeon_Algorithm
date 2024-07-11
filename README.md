@@ -97,30 +97,19 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <br />
 <br />
 
-- ramge132 (Level: 2)
-- Daekyue (Level: 1)
+## 🎖️ Level
+<table>
+<tr>
+  <td align="center"><a href="https://github.com/ramge132"><img src="https://avatars.githubusercontent.com/u/ramge132?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ramge132</b></sub></a><br />Level: 2</td>
+  <td align="center"><a href="https://github.com/Daekyue"><img src="https://avatars.githubusercontent.com/u/Daekyue?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daekyue</b></sub></a><br />Level: 1</td>
+</tr>
+</table>
 
   
 <br />
 <br />
+<br />
+<br />
 
 
-**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
-
-- ramge132 (Level: 2)
-- Daekyue (Level: 1)
-
-
-**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
-
-- ramge132 (Level: 2)
-- Daekyue (Level: 1)
-
-
-**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
-
-- ramge132 (Level: 2)
-- Daekyue (Level: 1)
-
-
-**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
+**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**
