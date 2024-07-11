@@ -114,6 +114,12 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 - Daekyue (Level: 1)
 
 
+**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
+
+- ramge132 (Level: 2)
+- Daekyue (Level: 1)
+
+
 ## ✅ 소스코드 파일 이름 규칙
 - 자유롭게 작성 
 - 폴더명 또는 소스코드 파일명에 콜론 ":" 안됩니다 :D
