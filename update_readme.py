@@ -16,10 +16,21 @@ contributors = repo.get_contributors()
 contributor_data = []
 
 for contributor in contributors:
-    # 기여자가 작성한 커밋 수 계산
-    commits = repo.get_commits(author=contributor).totalCount
+    # 기여자가 작성한 커밋 가져오기
+    commits = repo.get_commits(author=contributor)
+    file_set = set()
+    
+    for commit in commits:
+        # 각 커밋의 파일 목록 가져오기
+        commit_detail = repo.get_commit(commit.sha)
+        files = commit_detail.files
+        for file in files:
+            file_set.add(file.filename)
+    
+    # 파일 수 계산
+    file_count = len(file_set)
     # 레벨 계산
-    level = min(commits // 10 + 1, 5)
+    level = min(file_count // 10 + 1, 5)
     contributor_data.append((contributor.login, level))
 
 # README.md 파일 가져오기
@@ -39,9 +50,10 @@ if start == -1 or end == -1:
 new_contributors_section = start_marker + "\n\n"
 for login, level in contributor_data:
     new_contributors_section += f"- {login} (Level: {level})\n"
+new_contributors_section += "\n\n"
 
 # 기존 내용에서 기여자 섹션을 갱신
-new_readme_content = readme_content[:start] + new_contributors_section + "\n" + readme_content[end:]
+new_readme_content = readme_content[:start] + new_contributors_section + readme_content[end:]
 
 # 업데이트된 README.md 파일 커밋 및 푸시
 repo.update_file(readme.path, "Update README with contributors", new_readme_content, readme.sha)
