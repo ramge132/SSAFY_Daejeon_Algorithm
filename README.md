@@ -2,9 +2,9 @@
 ![img](./.source/logo.png)
 ---
 # SSAFY 12기 대전 알고리즘 스터디 📝
- ```🌱잔디 심기와 ✍🏻알고리즘 공부를 함께! ```
-
-매주 3문제 이상 풀기
+> 🌱잔디 심기와 ✍🏻알고리즘 공부를 함께!
+> 
+> **매주 3문제 이상 풀어보기**
 
 
 <br />
@@ -98,6 +98,11 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <br />
 
 ## 🎖️ 레벨
+> 업로드한 코드수가 많을 수록 레벨이 상승합니다
+>
+>    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>  <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/> <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/> <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/> <img src="https://img.shields.io/badge/LEVEL-5-purple?style=flat-square" alt="Level 5"/>
+
+<br />
 
 <table>
 <tr>
