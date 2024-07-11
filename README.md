@@ -103,7 +103,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 <tr>
   <td align="center">
     <a href="https://github.com/ramge132">
-      <img src="https://avatars.githubusercontent.com/u/ramge132?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/u/88639688?v=4" width="100px;" alt=""/><br />
       <sub><b>ramge132</b></sub>
     </a>
     <br />
@@ -111,7 +111,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
   </td>
   <td align="center">
     <a href="https://github.com/Daekyue">
-      <img src="https://avatars.githubusercontent.com/u/Daekyue?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/u/90326779?v=4" width="100px;" alt=""/><br />
       <sub><b>Daekyue</b></sub>
     </a>
     <br />
