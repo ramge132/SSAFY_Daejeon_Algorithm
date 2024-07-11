@@ -254,5 +254,83 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
 **해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
 
+- ramge132 (Level: 5)
+- Daekyue (Level: 1)
+## ✅ 소스코드 파일 이름 규칙
+- 자유롭게 작성 
+- 폴더명 또는 소스코드 파일명에 콜론 ":" 안됩니다 :D
+
+<br />
+<br />
+
+## ✅ commit 규칙
+- commit 메세지: [문제 출처(플랫폼)] 문제이름 / 난이도 / 걸린시간 
+- (optional)description: 문제 주소 or (SWEA의 경우)문제 번호 
+- 터미널에서 작성법: 
+```
+git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.net/problem/2557"
+```
+```
+git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
+```
+- 플랫폼 작성법 통일: 
+  * [BOJ] - 백준 
+  * [PGS] - 프로그래머스
+  * [LTC] - 리트코드
+  * [CFS] - 코드포스
+  * [SEA] - 삼성SW Expert Academy
+  * [ETC] - 그외
+
+<br />
+<br />
+
+## ✅ PR 규칙
+- PR 제목: 이름 / 주차 / 몇 문제
+-  ```유태영 / 8월 1주차 / 4문제 ```
+-  comment는 자유이나 가능하다면, 이번주에 풀었던 문제의 알고리즘 분류가 어떻게 되는지, <br> 어떤 문제가 어려웠는지 회고를 작성한다면 개인에게도 도움되고 다른 코드 리뷰어가 참고하기 좋을 것 같습니다 :)
+
+
+<br />
+<br />
+
+## ✅ (option)코드리뷰 규칙
+- PR에서 코드리뷰를 한다.
+- 전체 코드 흐름을 파악한 뒤, 이 분이 어떻게 풀었을까 이해를 한 후 
+- 의견제시
+  -   잘했다고 생각하는 부분
+  -   이렇게 하면 더 좋을 것 같다고 생각하는 부분
+  -   왜 이렇게 풀었는지 궁금한 부분
+  -   또 다른 풀이 방식 제시
+- 코드의 일부분에다 코드리뷰를 해도 되고 전체 코드 밑 or PR 하나 밑에다 코멘트 작성으로 리뷰를 해도 됩니다.
+
+<br />
+<br />
+
+## 📂 Document
+### 교재
+- [바킹독의 실전 알고리즘 강의](https://www.youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)
+- [이것이 취업을 위한 코딩 테스트다 with 파이썬](https://www.yes24.com/Product/Goods/91433923)
+
+### BOJ
+- [solved.ac](https://solved.ac/problems/level)
+- [코드 플러스](https://www.acmicpc.net/lectures)
+- [바킹독님 문제집](https://github.com/encrypted-def/basic-algo-lecture) (C,C++)
+
+### Programmers
+- [프로그래머스](https://school.programmers.co.kr/learn/challenges?tab=all_challenges&order=acceptance_desc&page=2&languages=python3&levels=2%2C3)
+
+### SWEA
+- [SW Expert Academy](https://swexpertacademy.com/main/code/problem/problemList.do?problemLevel=1&contestProbId=&categoryId=&categoryType=&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=PYTHON&select-1=4&pageSize=10&pageIndex=1)
+
+### 코테 집중 주간
+- [삼성 코테 대비 - 코드트리](https://www.codetree.ai/training-field/frequent-problems/company/samsung/problems)
+
+### 기타 문서
+- [깃 사용법](https://gin-girin-grim.tistory.com/10)
+  
+<br />
+
+**해당 레포지토리는 [ellynhan](http://github.com/ellynhan/challenge100-codingtest-study)님의 [Repo](https://github.com/ellynhan/challenge100-codingtest-study) / [RecoRecoNi](https://github.com/RecoRecoNi)님의 [Repo](https://github.com/RecoRecoNi/Algorithm-Study)를 기반으로 재구성하였습니다.**## ✅ 참여자와 진행도
+
 - ramge132 (Commits: 65, Level: 5)
 - Daekyue (Commits: 1, Level: 1)
