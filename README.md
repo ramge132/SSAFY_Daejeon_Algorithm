@@ -4,7 +4,8 @@
 # SSAFY 12기 대전 알고리즘 스터디 📝
 > 🌱잔디 심기와 ✍🏻알고리즘 공부를 함께!
 > 
-> **매주 3문제 이상 풀어보기**
+> **매주 3문제 이상 풀기**
+난이도 눈치 보지 말고 편하게 올리세요 \:)
 
 
 <br />
@@ -114,6 +115,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
+
   <td align="center">
     <a href="https://github.com/Daekyue">
       <img src="https://avatars.githubusercontent.com/u/90326779?v=4" width="100px;" alt=""/><br />
@@ -122,6 +124,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
+
    </td>
   <td align="center">
     <a href="https://github.com/happypildo">
@@ -131,6 +134,26 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
+
+  <td align="center">
+    <a href="https://github.com/RomanticBear">
+      <img src="https://avatars.githubusercontent.com/u/146941970?v=4" width="100px;" alt=""/><br />
+      <sub><b>RomanticBear</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/> 
+  </td>
+
+  <td align="center">
+    <a href="https://github.com/Jeseoyun">
+      <img src="https://avatars.githubusercontent.com/u/56038425?v=4" width="100px;" alt=""/><br />
+      <sub><b>Jeseoyun</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
+  
+
 </tr>
 </table>
 
