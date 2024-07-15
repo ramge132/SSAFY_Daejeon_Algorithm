@@ -10,14 +10,15 @@ def recurssive_E(S, E):
         ret = ret + recurssive_E(S, E[:-1])
         return ret
     
+    # For type 2 transformation
     if E[::-1][0] == 'Y':
         ret = ret + recurssive_E(S, E[::-1][1:])
         return ret
     
-# print(recurssive_E("YY", "XYYX"))
+
 T = int(input())
 for t_iter in range(1, T+1):
     S = input()
     E = input()
 
-    print(recurssive_E(S, E))
+    print(f"#{t_iter} {recurssive_E(S, E)}")
