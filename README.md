@@ -95,7 +95,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 ### SWEA
 - [`SW Expert Academy`](https://swexpertacademy.com/main/code/problem/problemList.do?problemLevel=1&contestProbId=&categoryId=&categoryType=&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=PYTHON&select-1=4&pageSize=10&pageIndex=1)
 
-### 코테 대비
+### 기업별 코테
 - [`삼성 (코드트리)`](https://www.codetree.ai/training-field/frequent-problems/company/samsung/problems)
 - [`오토에버 (유사문제)`](http://chestnut-license-d1d.notion.site/a1388a0203f742028b2e6d6b7b8d2870?pvs=74)
 
