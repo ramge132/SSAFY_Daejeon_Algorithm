@@ -107,9 +107,9 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 >    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>  <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/> <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/> <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/> <img src="https://img.shields.io/badge/LEVEL-5-purple?style=flat-square" alt="Level 5"/>
 
 <br />
-
 <table>
 <tr>
+
   <td align="center">
     <a href="https://github.com/ramge132">
       <img src="https://avatars.githubusercontent.com/u/88639688?v=4" width="100px;" alt=""/><br />
@@ -128,7 +128,6 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
 
-   </td>
   <td align="center">
     <a href="https://github.com/happypildo">
       <img src="https://avatars.githubusercontent.com/u/175089976?v=4" width="100px;" alt=""/><br />
@@ -138,9 +137,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
 
-  </td>
-    </td>
-    <td align="center">
+  <td align="center">
     <a href="https://github.com/seokbangguri">
       <img src="https://avatars.githubusercontent.com/u/34706061?v=4" width="100px;" alt=""/><br />
       <sub><b>seokbangguri</b></sub>
@@ -148,7 +145,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
-  
+
   <td align="center">
     <a href="https://github.com/RomanticBear">
       <img src="https://avatars.githubusercontent.com/u/146941970?v=4" width="100px;" alt=""/><br />
@@ -165,20 +162,33 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
-
   </td>
-    <td align="center">
+
+  <td align="center">
     <a href="https://github.com/Yeonri">
       <img src="https://avatars.githubusercontent.com/u/121929375?v=4" width="100px;" alt=""/><br />
       <sub><b>Yeonri</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
 
+</tr>
 
+<tr>
+
+  <td align="center">
+    <a href="https://github.com/uubinn0">
+      <img src="https://avatars.githubusercontent.com/u/137497758?v=4" width="100px;" alt=""/><br />
+      <sub><b>uubinn0</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
 
 </tr>
 </table>
+
 
   
 <br />
