@@ -117,10 +117,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 20.0%; font-weight: bold;" aria-valuenow="20.0" aria-valuemin="0" aria-valuemax="100">20%</div>
-    </div>
   </td>
   <td align="center">
     <a href="https://github.com/seokbangguri">
@@ -129,10 +125,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 15.0%; font-weight: bold;" aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100">15%</div>
-    </div>
   </td>
   <td align="center">
     <a href="https://github.com/Yeonri">
@@ -141,22 +133,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 15.0%; font-weight: bold;" aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100">15%</div>
-    </div>
-  </td>
-  <td align="center">
-    <a href="https://github.com/happypildo">
-      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
-      <sub><b>happypildo</b></sub>
-    </a>
-    <br />
-    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 15.0%; font-weight: bold;" aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100">15%</div>
-    </div>
   </td>
   <td align="center">
     <a href="https://github.com/Daekyue">
@@ -165,10 +141,14 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
+  </td>
+  <td align="center">
+    <a href="https://github.com/happypildo">
+      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
+      <sub><b>happypildo</b></sub>
+    </a>
     <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 15.0%; font-weight: bold;" aria-valuenow="15.0" aria-valuemin="0" aria-valuemax="100">15%</div>
-    </div>
+    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
     <a href="https://github.com/RomanticBear">
@@ -177,10 +157,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 0%; font-weight: bold;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-    </div>
   </td>
   <td align="center">
     <a href="https://github.com/Jeseoyun">
@@ -189,10 +165,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 0%; font-weight: bold;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-    </div>
   </td>
 </tr>
 <tr>
@@ -203,10 +175,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 0%; font-weight: bold;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-    </div>
   </td>
   <td align="center">
     <a href="https://github.com/uubinn0">
@@ -215,10 +183,6 @@
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
-    <br />
-    <div class="progress" style="height: 20px;">
-      <div class="progress-bar" role="progressbar" style="width: 0%; font-weight: bold;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-    </div>
   </td>
 </tr>
 </table>
