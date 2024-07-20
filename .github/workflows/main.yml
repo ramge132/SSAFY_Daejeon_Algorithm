@@ -3,32 +3,41 @@ name: Update README Levels
 on:
   schedule:
     - cron: '*/5 * * * *'  # 매 5분마다 실행
-  workflow_dispatch:
+    # - cron: '0 10 * * 6' # 매주 토요일 19:00 (UTC 기준 10:00에 해당)
+  workflow_dispatch:  # 수동으로 워크플로우를 트리거할 수 있도록 설정
 
 jobs:
   update-readme:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 최신 Ubuntu 환경에서 실행
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        persist-credentials: false  
+        persist-credentials: false  # 기본 인증 정보를 유지하지 않음, 후속 단계에서 직접 인증 정보 설정
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.x'  # Python 3.x 버전을 설정
 
     - name: Install dependencies
-      run: pip install PyYAML
+      run: pip install PyYAML  # PyYAML 라이브러리를 설치
 
     - name: Update README
-      run: python update_levels.py
+      run: python update_levels.py  # update_levels.py 스크립트를 실행하여 README 파일 업데이트
 
     - name: Commit and push changes
       env:
-        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}  # MY_GITHUB_TOKEN 시크릿을 환경 변수로 설정
+
+# run 설명
+# 1. git 사용자 이메일 설정
+# 2. git 사용자 이름 설정
+# 3. 인증 토큰을 포함하여 원격 저장소 URL 설정
+# 4. README.md 파일을 git 스테이징 영역에 추가
+# 5. 변경 사항을 커밋
+# 6. 변경 사항을 원격 저장소의 main 브랜치로 푸시
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
