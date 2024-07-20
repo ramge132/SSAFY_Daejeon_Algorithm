@@ -115,7 +115,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
   <td align="center">
     <a href="https://github.com/ramge132">
-      <img src="https://avatars.githubusercontent.com/u/88639688?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/ramge132?v=4" width="100px;" alt=""/><br />
       <sub><b>ramge132</b></sub>
     </a>
     <br />
@@ -124,7 +124,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
   <td align="center">
     <a href="https://github.com/Daekyue">
-      <img src="https://avatars.githubusercontent.com/u/90326779?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/Daekyue?v=4" width="100px;" alt=""/><br />
       <sub><b>Daekyue</b></sub>
     </a>
     <br />
@@ -133,7 +133,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
   <td align="center">
     <a href="https://github.com/happypildo">
-      <img src="https://avatars.githubusercontent.com/u/175089976?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
       <sub><b>happypildo</b></sub>
     </a>
     <br />
@@ -142,7 +142,7 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
   <td align="center">
     <a href="https://github.com/seokbangguri">
-      <img src="https://avatars.githubusercontent.com/u/34706061?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/seokbangguri?v=4" width="100px;" alt=""/><br />
       <sub><b>seokbangguri</b></sub>
     </a>
     <br />
@@ -169,11 +169,11 @@ git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"
 
   <td align="center">
     <a href="https://github.com/Yeonri">
-      <img src="https://avatars.githubusercontent.com/u/121929375?v=4" width="100px;" alt=""/><br />
+      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
       <sub><b>Yeonri</b></sub>
     </a>
     <br />
-    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
 
 </tr>
