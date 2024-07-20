@@ -1,0 +1,38 @@
+name: Update README Levels
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # 매 5분마다 실행
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false  
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install PyYAML
+
+    - name: Update README
+      run: python update_levels.py
+
+    - name: Commit and push changes
+      env:
+        MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+      run: |
+        git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git remote set-url origin https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git add README.md
+        git commit -m "Update README levels"
+        git push origin HEAD:main
