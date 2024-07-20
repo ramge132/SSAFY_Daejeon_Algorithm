@@ -43,8 +43,9 @@ def update_readme(readme_path, user_levels):
 
     for user, level in user_levels.items():
         badge = get_level_badge(level)
+        # 사용자 이름에 맞는 레벨 배지를 업데이트합니다.
         content = re.sub(
-            rf'(<sub><b>{user}</b></sub>\s*<br\s*/>\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(")',
+            rf'(<sub><b>{user}</b></sub>\s*<br\s*/>\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(" alt="Level \d+"/> )',
             rf'\1{level}-{badge.split("-")[2]}\2',
             content
         )
