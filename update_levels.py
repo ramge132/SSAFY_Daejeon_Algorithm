@@ -44,7 +44,7 @@ def update_readme(readme_path, user_levels):
     for user, level in user_levels.items():
         badge = get_level_badge(level)
         content = re.sub(
-            rf'(<sub><b>{user}</b></sub>.*\n\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(".*)',
+            rf'(<sub><b>{user}</b></sub>.*\n\s*<img src="https://img\.shields\.io/badge/LEVEL-[^"]*)(".*)',
             rf'\1{level}-{badge.split("-")[2]}\2',
             content
         )
