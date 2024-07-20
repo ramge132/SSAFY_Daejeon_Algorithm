@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 ![img](./.source/logo.png)
 ---
 # SSAFY 12기 대전 알고리즘 스터디 📝
