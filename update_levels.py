@@ -36,6 +36,12 @@ def get_user_level(file_count):
             return level
     return 0
 
+def calculate_experience_percentage(file_count):
+    """파일 수에 따른 경험치를 백분율로 계산하는 함수"""
+    max_files = 20  # 20개 파일이 100%로 설정
+    percentage = min(file_count / max_files * 100, 100)  # 100%를 넘지 않도록 설정
+    return percentage
+
 def update_readme():
     """README.md 파일을 업데이트하는 함수"""
     readme_path = 'README.md'  # README.md 파일 경로
@@ -52,13 +58,14 @@ def update_readme():
     
     # 기존 0레벨 유저 데이터를 수동으로 추가
     for user in manual_zero_level_users:
-        user_data.append((user, 0, 0))
+        user_data.append((user, 0, 0, 0))
 
     for user in user_folders:
         # 사용자의 폴더 내 파일 수 계산
         file_count = sum(len(files) for _, _, files in os.walk(user))
         user_level = get_user_level(file_count)  # 파일 수에 따른 사용자 레벨 결정
-        user_data.append((user, file_count, user_level))  # 사용자 데이터에 추가
+        user_experience = calculate_experience_percentage(file_count)  # 파일 수에 따른 경험치 백분율 계산
+        user_data.append((user, file_count, user_level, user_experience))  # 사용자 데이터에 추가
 
     # 파일 수에 따라 내림차순으로 정렬
     user_data.sort(key=lambda x: x[1], reverse=True)
@@ -70,9 +77,14 @@ def update_readme():
         print("Table not found in README.md")  # 테이블을 찾지 못한 경우 메시지 출력
         return False  # 테이블을 찾지 못하면 False 반환
 
+    # Bootstrap CSS 추가
+    bootstrap_css = '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">\n'
+    if bootstrap_css not in content:
+        content = bootstrap_css + content
+
     # 기존 테이블 부분을 대체할 새로운 테이블 생성
     new_table = "<table>\n"
-    for i, (user, file_count, user_level) in enumerate(user_data):
+    for i, (user, file_count, user_level, user_experience) in enumerate(user_data):
         if i % 7 == 0:
             if i != 0:
                 new_table += "</tr>\n"  # 이전 행 닫기
@@ -85,6 +97,10 @@ def update_readme():
             f'    </a>\n'
             f'    <br />\n'
             f'    {level_badges[user_level]}\n'
+            f'    <br />\n'
+            f'    <div class="progress" style="height: 20px;">\n'  # Bootstrap progress bar 추가
+            f'      <div class="progress-bar" role="progressbar" style="width: {user_experience}%; font-weight: bold;" aria-valuenow="{user_experience}" aria-valuemin="0" aria-valuemax="100">{user_experience:.0f}%</div>\n'
+            f'    </div>\n'
             f'  </td>\n'
         )
     new_table += "</tr>\n</table>"
