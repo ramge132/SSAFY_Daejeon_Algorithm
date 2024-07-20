@@ -1,60 +1,54 @@
 import os
-from github import Github
+import re
 
-# 환경 변수에서 GitHub Token 가져오기
-GITHUB_TOKEN = os.getenv('MY_GITHUB_TOKEN')
-if not GITHUB_TOKEN:
-    raise ValueError("GITHUB_TOKEN environment variable is not set.")
-REPO_NAME = "ramge132/SSAFY_Daejeon_Algorithm"  # 저장소 이름으로 변경
+def count_files(user_dir):
+    total_files = 0
+    for root, dirs, files in os.walk(user_dir):
+        total_files += len([file for file in files if not file.startswith('.')])
+    return total_files
 
-# GitHub 클라이언트 초기화
-g = Github(GITHUB_TOKEN)
-repo = g.get_repo(REPO_NAME)
+def determine_level(file_count):
+    if file_count == 0:
+        return 0
+    elif file_count <= 20:
+        return 1
+    elif file_count <= 40:
+        return 2
+    elif file_count <= 60:
+        return 3
+    elif file_count <= 80:
+        return 4
+    elif file_count <= 100:
+        return 5
+    else:
+        return 5
 
-# 기여자 정보 가져오기
-contributors = repo.get_contributors()
-contributor_data = []
+def update_readme(readme_path, user_levels):
+    with open(readme_path, 'r') as file:
+        content = file.read()
 
-for contributor in contributors:
-    # 기여자가 작성한 커밋 가져오기
-    commits = repo.get_commits(author=contributor)
-    file_set = set()
-    
-    for commit in commits:
-        # 각 커밋의 파일 목록 가져오기
-        commit_detail = repo.get_commit(commit.sha)
-        files = commit_detail.files
-        for file in files:
-            file_set.add(file.filename)
-    
-    # 파일 수 계산
-    file_count = len(file_set)
-    # 레벨 계산
-    level = min(file_count // 10 + 1, 5)
-    contributor_data.append((contributor.login, level))
+    for user, level in user_levels.items():
+        content = re.sub(
+            rf'(<sub><b>{user}</b></sub>.*\n\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(")',
+            rf'\1{level}-blue\2',
+            content
+        )
 
-# README.md 파일 가져오기
-readme = repo.get_readme()
-readme_content = readme.decoded_content.decode('utf-8')
+    with open(readme_path, 'w') as file:
+        file.write(content)
 
-# 기존 기여자 섹션을 찾아서 삭제하고 새로운 내용 준비
-start_marker = "## ✅ 참여자와 진행도"
-end_marker = "**해당 레포지토리는"
+def main():
+    base_dir = '.'
+    readme_path = os.path.join(base_dir, 'README.md')
+    user_dirs = [d for d in os.listdir(base_dir) if os.path.isdir(d) and not d.startswith('.')]
 
-start = readme_content.find(start_marker)
-end = readme_content.find(end_marker)
+    user_levels = {}
+    for user_dir in user_dirs:
+        file_count = count_files(user_dir)
+        level = determine_level(file_count)
+        user_levels[user_dir] = level
 
-if start == -1 or end == -1:
-    raise ValueError("README.md does not contain the expected sections")
+    update_readme(readme_path, user_levels)
 
-# 새로운 기여자 섹션 생성
-new_contributors_section = start_marker + "\n\n"
-for login, level in contributor_data:
-    new_contributors_section += f"- {login} (Level: {level})\n"
-new_contributors_section += "\n\n"
-
-# 기존 내용에서 기여자 섹션을 갱신
-new_readme_content = readme_content[:start] + new_contributors_section + readme_content[end:]
-
-# 업데이트된 README.md 파일 커밋 및 푸시
-repo.update_file(readme.path, "Update README with contributors", new_readme_content, readme.sha)
+if __name__ == "__main__":
+    main()
