@@ -33,28 +33,28 @@
 <br />
 
 ## ✅ commit 규칙
-- commit 메세지: [문제 출처(플랫폼)] 문제이름 / 난이도 / 걸린시간 
+**commit 메세지: `난이도 / 문제이름`**
 - (optional)description: 문제 주소 or (SWEA의 경우)문제 번호 
 - 터미널에서 작성법: 
 
-`git commit -m "[BOJ] Hello World / 브론즈5 / 1분" -m "https://www.acmicpc.net/problem/2557"`
+```
+git commit -m "브론즈5 / Hello World" -m "https://www.acmicpc.net/problem/2557"
+```
 
-`git commit -m "[SEA] 홀수만 더하기 / D1 / 1분" -m "2072"`
 
-- 플랫폼 작성법 통일: 
-  * [BOJ] - 백준 
-  * [PGS] - 프로그래머스
-  * [LTC] - 리트코드
-  * [CFS] - 코드포스
-  * [SEA] - 삼성SW Expert Academy
-  * [ETC] - 그외
+```
+git commit -m "D1 / 홀수만 더하기" -m "2072"
+```
+
 
 <br />
 <br />
 
 ## ✅ PR 규칙
-- PR 제목: 이름 / 주차 / 몇 문제
-- `유태영 / 8월 1주차 / 4문제`   
+**PR 제목: `이름 / 주차 / 문제 갯수`**
+```
+유태영 / 8월1주차 / 4문제
+```
 -  Description은 자유이나 가능하다면   
 문제의 설명, 알고리즘 분류, 어려웠던 점 등의 회고를 작성한다면   
 개인에게도 도움되고 다른 코드 리뷰어가 참고하기 좋을 것 같습니다 :)
@@ -103,7 +103,7 @@
 <br />
 
 ## 🎖️ 레벨
-> 업로드한 코드수가 많을 수록 레벨이 상승합니다
+> 업로드한 코드수가 많을 수록 레벨이 상승합니다!
 >
 >    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>  <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/> <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/> <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/> <img src="https://img.shields.io/badge/LEVEL-5-purple?style=flat-square" alt="Level 5"/>
 
