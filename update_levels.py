@@ -37,8 +37,10 @@ def update_readme():
 
     # 사용자 폴더와 파일 수를 수집
     user_data = []
-    # 현재 디렉토리에서 '.github'으로 시작하지 않는 모든 폴더를 사용자 폴더로 간주
-    user_folders = [f for f in os.listdir('.') if os.path.isdir(f) and not f.startswith('.github')]
+    # 제외할 폴더 리스트
+    excluded_folders = {'.git', '.github', '.source'}
+    # 현재 디렉토리에서 제외할 폴더를 제외한 모든 폴더를 사용자 폴더로 간주
+    user_folders = [f for f in os.listdir('.') if os.path.isdir(f) and f not in excluded_folders]
     for user in user_folders:
         # 사용자의 폴더 내 파일 수 계산
         file_count = sum(len(files) for _, _, files in os.walk(user))
