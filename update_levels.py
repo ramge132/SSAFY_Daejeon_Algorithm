@@ -1,5 +1,5 @@
-import os
-import re
+import os  # 사용자 폴더를 확인하고, 폴더 내 파일 수를 계산하는 데 사용
+import re  # README.md 파일 내의 테이블 부분을 찾고, 새로운 테이블로 대체하는 데 사용
 
 # 사용자 레벨을 업데이트할 기준 파일 수와 대응하는 뱃지 URL을 정의
 level_badges = {
