@@ -23,14 +23,29 @@ def determine_level(file_count):
     else:
         return 5
 
+def get_level_badge(level):
+    if level == 1:
+        return '<img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>'
+    elif level == 2:
+        return '<img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>'
+    elif level == 3:
+        return '<img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/>'
+    elif level == 4:
+        return '<img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/>'
+    elif level == 5:
+        return '<img src="https://img.shields.io/badge/LEVEL-5-purple?style=flat-square" alt="Level 5"/>'
+    else:
+        return '<img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>'
+
 def update_readme(readme_path, user_levels):
     with open(readme_path, 'r') as file:
         content = file.read()
 
     for user, level in user_levels.items():
+        badge = get_level_badge(level)
         content = re.sub(
-            rf'(<sub><b>{user}</b></sub>.*\n\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(")',
-            rf'\1{level}-blue\2',
+            rf'(<sub><b>{user}</b></sub>.*\n\s*<img src="https://img\.shields\.io/badge/LEVEL-)[^"]*(".*)',
+            rf'\1{level}-{badge.split("-")[2]}\2',
             content
         )
 
