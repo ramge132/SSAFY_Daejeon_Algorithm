@@ -38,10 +38,15 @@ jobs:
 # 4. README.md 파일을 git 스테이징 영역에 추가
 # 5. 변경 사항을 커밋
 # 6. 변경 사항을 원격 저장소의 main 브랜치로 푸시
+# 7. if 변경점이 있으면 commit, 없으면 No commit
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "GitHub Action"
         git remote set-url origin https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        git add README.md
-        git commit -m "Update README levels"
-        git push origin HEAD:main
+        if ! git diff --quiet; then
+          git add README.md
+          git commit -m "Update README levels"
+          git push origin HEAD:main
+        else
+          echo "No changes to commit"
+        fi
