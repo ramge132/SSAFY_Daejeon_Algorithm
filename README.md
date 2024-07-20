@@ -150,6 +150,40 @@
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
+  <td align="center">
+    <a href="https://github.com/RomanticBear">
+      <img src="https://avatars.githubusercontent.com/RomanticBear?v=4" width="100px;" alt=""/><br />
+      <sub><b>RomanticBear</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
+  <td align="center">
+    <a href="https://github.com/Jeseoyun">
+      <img src="https://avatars.githubusercontent.com/Jeseoyun?v=4" width="100px;" alt=""/><br />
+      <sub><b>Jeseoyun</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
+</tr>
+<tr>
+  <td align="center">
+    <a href="https://github.com/Yeonri">
+      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
+      <sub><b>Yeonri</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
+  <td align="center">
+    <a href="https://github.com/uubinn0">
+      <img src="https://avatars.githubusercontent.com/uubinn0?v=4" width="100px;" alt=""/><br />
+      <sub><b>uubinn0</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+  </td>
 </tr>
 </table>
 
