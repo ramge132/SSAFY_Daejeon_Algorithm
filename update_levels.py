@@ -21,6 +21,14 @@ level_ranges = {
     5: (81, 100)
 }
 
+# 수동으로 추가된 0레벨 유저 리스트
+manual_zero_level_users = [
+    "RomanticBear",
+    "Jeseoyun",
+    "Yeonri",
+    "uubinn0"
+]
+
 def get_user_level(file_count):
     """파일 수에 따른 사용자 레벨을 결정하는 함수"""
     for level, (min_files, max_files) in level_ranges.items():
@@ -41,6 +49,11 @@ def update_readme():
     excluded_folders = {'.git', '.github', '.source'}
     # 현재 디렉토리에서 제외할 폴더를 제외한 모든 폴더를 사용자 폴더로 간주
     user_folders = [f for f in os.listdir('.') if os.path.isdir(f) and f not in excluded_folders]
+    
+    # 기존 0레벨 유저 데이터를 수동으로 추가
+    for user in manual_zero_level_users:
+        user_data.append((user, 0, 0))
+
     for user in user_folders:
         # 사용자의 폴더 내 파일 수 계산
         file_count = sum(len(files) for _, _, files in os.walk(user))
