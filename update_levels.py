@@ -83,12 +83,17 @@ def update_readme():
         content = bootstrap_css + content
 
     # 기존 테이블 부분을 대체할 새로운 테이블 생성
+<<<<<<< HEAD
     new_table = "<table>\n"
     for i, (user, file_count, user_level, user_experience) in enumerate(user_data):
         if i % 7 == 0:
             if i != 0:
                 new_table += "</tr>\n"  # 이전 행 닫기
             new_table += "<tr>\n"  # 새로운 행 시작
+=======
+    new_table = "<table>\n<tr>\n"
+    for user, file_count, user_level in user_data:
+>>>>>>> parent of d059291 (Update update_levels.py)
         new_table += (
             f'  <td align="center">\n'
             f'    <a href="https://github.com/{user}">\n'
