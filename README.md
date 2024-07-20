@@ -135,17 +135,17 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
-    <a href="https://github.com/Daekyue">
-      <img src="https://avatars.githubusercontent.com/Daekyue?v=4" width="100px;" alt=""/><br />
-      <sub><b>Daekyue</b></sub>
+    <a href="https://github.com/happypildo">
+      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
+      <sub><b>happypildo</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
-    <a href="https://github.com/happypildo">
-      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
-      <sub><b>happypildo</b></sub>
+    <a href="https://github.com/Daekyue">
+      <img src="https://avatars.githubusercontent.com/Daekyue?v=4" width="100px;" alt=""/><br />
+      <sub><b>Daekyue</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
