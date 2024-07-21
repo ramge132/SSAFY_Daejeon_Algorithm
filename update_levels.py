@@ -25,7 +25,6 @@ level_ranges = {
 manual_zero_level_users = [
     "RomanticBear",
     "Jeseoyun",
-    "Yeonri",
     "uubinn0"
 ]
 
