@@ -56,7 +56,6 @@ for t_iter in range(1, T + 1):
         for _ in range(count):
             operator_set = operator_set + OPERATORS[idx]
 
-    # Initialization
     OPERATOR_ORDERS = []
     memoization = {}
 
