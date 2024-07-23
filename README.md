@@ -34,7 +34,7 @@
 
 ## ✅ commit 규칙
 **commit 메세지: `난이도 / 문제이름`**
-- (optional)description: 문제 주소 or (SWEA의 경우)문제 번호 
+- (optional) description: 문제 주소 or (SWEA의 경우)문제 번호 
 - 터미널에서 작성법: 
 
 ```
@@ -51,27 +51,31 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 <br />
 
 ## ✅ PR 규칙
-**PR 제목: `이름 / 주차 / 문제 갯수`**
+**Title: `이름 / 주차 / 문제 갯수`**
 ```
 유태영 / 8월1주차 / 4문제
 ```
--  Description은 자유이나 가능하다면   
-문제의 설명, 알고리즘 분류, 어려웠던 점 등의 회고를 작성한다면   
-개인에게도 도움되고 다른 코드 리뷰어가 참고하기 좋을 것 같습니다 :)
+
+<br />
+
+**Decription:**
+- 풀었던 문제 중 하나를 선택
+- 문제의 링크 & 본인이 작성한 코드를 작성
+- `시간복잡도`, `알고리즘 분류`, `어려웠던 점` 등 자유롭게 작성   
+
 
 
 <br />
 <br />
 
-## ✅ (option)코드리뷰 규칙
-- PR에서 코드리뷰를 한다.
-- 전체 코드 흐름을 파악한 뒤, 이 분이 어떻게 풀었을까 이해를 한 후 
+## ✅ 코드리뷰
+- 팀원의 PR에 들어간다.
+- 어떻게 풀었을까 이해를 한 후 
 - 의견제시
   -   잘했다고 생각하는 부분
   -   이렇게 하면 더 좋을 것 같다고 생각하는 부분
   -   왜 이렇게 풀었는지 궁금한 부분
   -   또 다른 풀이 방식 제시
-- 코드의 일부분에다 코드리뷰를 해도 되고 전체 코드 밑 or PR 하나 밑에다 코멘트 작성으로 리뷰를 해도 됩니다.
 
 <br />
 <br />
@@ -103,7 +107,7 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 <br />
 
 ## 🎖️ 레벨
-> 업로드한 코드수가 많을 수록 레벨이 상승합니다!
+> 업로드한 코드파일이 많을수록 자동으로 레벨이 상승합니다!
 >
 >    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>  <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/> <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/> <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/> <img src="https://img.shields.io/badge/LEVEL-5-purple?style=flat-square" alt="Level 5"/>
 
