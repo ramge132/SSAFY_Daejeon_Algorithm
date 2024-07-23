@@ -10,6 +10,7 @@ def hanoi(N, start_poll, end_poll, middle_poll):
 
     return result
 
+
 N = int(input())
 
 if N > 20:
