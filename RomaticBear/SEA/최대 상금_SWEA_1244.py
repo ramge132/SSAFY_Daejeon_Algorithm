@@ -54,7 +54,7 @@ for tc in range(1,T+1):
 
     # num: 숫자카드, cnt: 교체횟수
     num,N=map(int,input().split())
-
+ 
     # 숫자 카드 리스트 변환
     lst=list(map(int,str(num)))
 
