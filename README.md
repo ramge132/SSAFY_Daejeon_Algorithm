@@ -147,14 +147,8 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
-  <td align="center">
-    <a href="https://github.com/RomaticBear">
-      <img src="https://avatars.githubusercontent.com/RomaticBear?v=4" width="100px;" alt=""/><br />
-      <sub><b>RomaticBear</b></sub>
-    </a>
-    <br />
-    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
-  </td>
+</tr>
+<tr>  
   <td align="center">
     <a href="https://github.com/Daekyue">
       <img src="https://avatars.githubusercontent.com/Daekyue?v=4" width="100px;" alt=""/><br />
@@ -171,8 +165,6 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
   </td>
-</tr>
-<tr>
   <td align="center">
     <a href="https://github.com/Jeseoyun">
       <img src="https://avatars.githubusercontent.com/Jeseoyun?v=4" width="100px;" alt=""/><br />
