@@ -23,7 +23,6 @@ level_ranges = {
 
 # 수동으로 추가된 0레벨 유저 리스트
 manual_zero_level_users = [
-    "RomanticBear",
     "Jeseoyun",
     "uubinn0"
 ]
