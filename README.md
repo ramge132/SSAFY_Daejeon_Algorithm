@@ -60,8 +60,8 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 
 **Decription:**
 - 풀었던 문제 중 하나를 선택
-- 문제의 링크 & 본인이 작성한 코드를 작성
-- `시간복잡도`, `알고리즘 분류`, `어려웠던 점` 등 자유롭게 작성   
+- `문제의 링크` & `코드`를 작성
+- `문제설명`, `접근방식`, `알고리즘 분류`, `시간복잡도`, `어려웠던 점` 등 자유롭게 작성   
 
 
 
@@ -69,7 +69,8 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 <br />
 
 ## ✅ 코드리뷰
-- 팀원의 PR에 들어간다.
+코드 리뷰 기간: `해당 주차 (월~일)`
+- 팀원의 해당 주차 PR에 들어간다 `(토요일 18시 이후는 closed에 있음)`
 - 어떻게 풀었을까 이해를 한 후 
 - 의견제시
   -   잘했다고 생각하는 부분
@@ -115,9 +116,9 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 <table>
 <tr>
   <td align="center">
-    <a href="https://github.com/happypildo">
-      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
-      <sub><b>happypildo</b></sub>
+    <a href="https://github.com/Yeonri">
+      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
+      <sub><b>Yeonri</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
@@ -139,13 +140,15 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
-    <a href="https://github.com/Yeonri">
-      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
-      <sub><b>Yeonri</b></sub>
+    <a href="https://github.com/happypildo">
+      <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
+      <sub><b>happypildo</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
+</tr>
+<tr>
   <td align="center">
     <a href="https://github.com/Daekyue">
       <img src="https://avatars.githubusercontent.com/Daekyue?v=4" width="100px;" alt=""/><br />
@@ -160,7 +163,7 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
       <sub><b>RomanticBear</b></sub>
     </a>
     <br />
-    <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
+    <img src="https://img.shields.io/badge/LEVEL-1-blue?style=flat-square" alt="Level 1"/>
   </td>
   <td align="center">
     <a href="https://github.com/Jeseoyun">
@@ -170,8 +173,6 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <br />
     <img src="https://img.shields.io/badge/LEVEL-0-lightgrey?style=flat-square" alt="Level 0"/>
   </td>
-</tr>
-<tr>
   <td align="center">
     <a href="https://github.com/uubinn0">
       <img src="https://avatars.githubusercontent.com/uubinn0?v=4" width="100px;" alt=""/><br />
