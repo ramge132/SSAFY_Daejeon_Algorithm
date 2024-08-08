@@ -26,7 +26,7 @@ for test_case in range(1, T + 1):
     total = 0 # 결과 저장
     people_number = 1
     result = []
-
+    
     while len(result) < K:
            #or any(isinstance(a, list) for a in A_lst) or any(isinstance(b, list) for b in B_lst)):
 
@@ -59,7 +59,7 @@ for test_case in range(1, T + 1):
         #########
 
         for idx in range(N):
-            if isinstance(A_lst[idx], list):
+            if isinstance(A_lst[idx], list):    # [person_num, 0] != 0 >> 오류 안남 
                 person_num, A_cnt_time = A_lst[idx]
                 if A_cnt_time < A_time[idx] - 1:
                     A_lst[idx][1] += 1
