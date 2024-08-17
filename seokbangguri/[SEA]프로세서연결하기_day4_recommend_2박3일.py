@@ -1,17 +1,17 @@
 import sys
 # from pprint import pprint
-sys.stdin = open('input.txt')
+sys.stdin = open('core.txt')
 
 # 상 하 좌 우
 dxy = [[0, -1], [0, 1], [-1, 0], [1, 0]]
 
-def dfs(cells, cores_pos, connected_cores, elec_line, depth):
+def dfs(cells, connected_cores, elec_line, depth):
     global result
     # 현재 연결된 코어보다 최대 코어 수가 적으면 더 탐색할 필요가 없음
-    if connected_cores + (len(cores_pos) - depth) < result[0]:
+    if connected_cores + (len(core_points) - depth) < result[0]:
         return
     
-    if depth >= len(cores_pos):
+    if depth >= len(core_points):
         if connected_cores > result[0]:
             result = [connected_cores, elec_line]
             # pprint(cells)
@@ -21,11 +21,11 @@ def dfs(cells, cores_pos, connected_cores, elec_line, depth):
         return
     
     # 코어의 위치
-    cx, cy = cores_pos[depth]
+    cx, cy = core_points[depth]
 
     # 모서리 코어인 경우
     if cx == 0 or cy == 0 or cx == N - 1 or cy == N - 1:
-        dfs(cells, cores_pos, connected_cores+1, elec_line, depth+1)
+        dfs(cells, connected_cores+1, elec_line, depth+1)
 
     # 모서리 코어가 아닌 경우
     else:
@@ -55,12 +55,15 @@ def dfs(cells, cores_pos, connected_cores, elec_line, depth):
                     nx += x
                     ny += y
                 
-                dfs(temp_cells, cores_pos, connected_cores+1, elec_line + temp_lines, depth+1)
+                    if connected_cores + 1 + (len(core_points) - (depth + 1)) < result[0] and elec_line + temp_lines > result[1]:
+                        return
+                
+                dfs(temp_cells, connected_cores+1, elec_line + temp_lines, depth+1)
             
             # 연결하지 않고 넘어가는 경우
-            dfs(cells, cores_pos, connected_cores, elec_line, depth + 1)
+            dfs(cells, connected_cores, elec_line, depth + 1)
                     
-
+prints = ''
 T = int(input())
 for test_case in range(1, T + 1):
     N = int(input())
@@ -76,6 +79,6 @@ for test_case in range(1, T + 1):
             if cells[y][x]:
                 core_points.append((x, y))
 
-    dfs(cells, core_points, 0, 0, 0)
-    print(f'#{test_case} {result[1]}')
-    # break
+    dfs(cells, 0, 0, 0)
+    prints += f'#{test_case} {result[1]}\n'
+print(prints)
