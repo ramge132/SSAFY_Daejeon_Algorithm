@@ -131,7 +131,7 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
       <sub><b>Yeonri</b></sub>
     </a>
     <br />
-    <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>
+    <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/>
   </td>
   <td align="center">
     <a href="https://github.com/ramge132">
