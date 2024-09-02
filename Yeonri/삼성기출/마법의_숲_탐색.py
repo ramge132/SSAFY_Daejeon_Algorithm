@@ -220,7 +220,7 @@ def bfs(i, j):
         x, y = queue.popleft()
         for dx, dy in DXY:
             nx, ny = x + dx, y + dy
-            if nx == C - 2:
+            if nx == C - 2 and lst[nx][ny] == 1:
                 return True
             if not is_valid(nx, ny): return
             if lst[nx][ny] == 1:
@@ -247,9 +247,10 @@ for i in range(K):
 for i in range(len(gol)):
     # print(f'--------------next {i}-----------')
     down(1, gol[i][0] - 1, gol[i][1])
-    # print(f'{i} {result}')
+    pprint(lst)
+    print(f'number: {i} result: {result}')
 
 
 # print(gol)
 print(result)
-pprint(lst)
+# pprint(lst)
