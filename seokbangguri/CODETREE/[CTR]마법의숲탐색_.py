@@ -72,6 +72,10 @@ def movingMonster(x_pos, direction, no):
     # 가능 한 경우
     else:
         (mon_pos_x, mon_pos_y), rotate_time = check_down((x_pos, 1))
+        '''
+        
+        조건문 추가 y 값이 3보다 작은 경우 맵 초기화
+        '''
         if rotate_time < -4:
             direction += rotate_time + abs(rotate_time)//4 * 4
         elif rotate_time > 4:
@@ -95,7 +99,7 @@ def movingMonster(x_pos, direction, no):
 
 r, c, k = map(int, input().split())
 monsters = [list(map(int, input().split())) for _ in range(k)]
-forest = [[0]*c for _ in range(r)]
+forest = [[0]*c for _ in range(r+3)]
 result = 0
 
 for i, (x, d) in enumerate(monsters, start=1):
