@@ -1,36 +1,3 @@
-'''
-
-15
-100 1 -1 1 3
-100 2 1 2 1
-100 3 2 3 2
-400
-100 4 1 1 3
-100 5 4 3 2
-400
-200 4 4
-100 6 4 5 2
-300 1
-300 5
-300 6
-400
-200 2 4
-400
-
-
-6
-100 1 -1 1 3
-100 2 1 2 2
-100 3 1 3 1
-100 4 3 4 1
-300 2
-400
-
-
-'''
-
-# from pprint import pprint
-
 def update_colors(p_id, color):
     if p_id == -1:
         return
@@ -83,7 +50,8 @@ def update_parent_colors(m_id):
                 temp_colors[i] = 1
 
     nodes[p_id]['colors'] = temp_colors
-    update_parent_colors(nodes[p_id]['p_id'])
+    # update_parent_colors(nodes[p_id]['p_id'])
+    update_parent_colors(p_id)
 
 # 색 변경
 def commandTwo(code, m_id, color):
@@ -97,14 +65,6 @@ def commandTwo(code, m_id, color):
         commandTwo(200, child_mid, color)
 
     return m_id
-
-    # 부모 노드의 색 변경
-    '''
-    
-    부모 노드가 가지고 있는 색들을 변경해줘야함 그럼 끝
-    
-    '''
-
     
 
 # 색 조회
@@ -115,10 +75,8 @@ def commandThree(code, m_id):
 def commandFour(code):
     result = 0
     for n in nodes.values():
-        # pprint(n)
         result += sum(n['colors'])**2
 
-    # return print('result', result)
     return print(result)
 
 
@@ -137,5 +95,3 @@ for c in commands:
         commandThree(*c)
     elif c[0] == 400:
         commandFour(*c)
-
-# pprint(nodes)
