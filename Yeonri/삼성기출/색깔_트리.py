@@ -12,20 +12,34 @@ def create_node(content):
     # 부모 노드의 깊이보다 현재 노드의 깊이가 크면 안됨 > 같거나 작다.
     if content[2] == -1:
         graph[content[1]] = content[2:]
-        re_graph[content[2]] = content[1]
+        re_graph[content[2]].append(content[1])
 
     else:
         # 부모들을 찾아 이동해서 값을 탐색한다.
         create_flag = True
         next_id = content[2]
 
-        if graph[next_id][2] < content[-1]: # 부모노드의 깊이보다 클 경우 오류
-            create_flag = False
-    
+        create_flag = count_depth(next_id, 2)
+        
         if create_flag:
             graph[content[1]] = content[2:]
             re_graph[content[2]].append(content[1])
 
+def count_depth(current_id, cnt):
+
+    parent_id =  graph[current_id][0]
+
+    # 현재 깊이보다 cnt가 작을 때, 실패
+    if graph[current_id][2] < cnt:
+        return False
+
+    # print(current_id, graph[current_id], parent_id, cnt)
+    if parent_id == -1:
+        return True
+    
+    return count_depth(parent_id, cnt + 1)
+
+    
 def change_color(current_id, col):
     global graph
 
@@ -41,59 +55,33 @@ def change_color(current_id, col):
     for id in next_id:
         change_color(id, col)
 
-    # 양쪽에 자식 노드가 존재하기 때문에 dfs를 이용한다.
-    # while True:
-
-    #     # 현재 노드와 연결된 자식 노드의 번호를 찾는다.
-        
-    #     # 연결된 자식 노드가 존재하지 않을 때,
-    #     if current_id not in re_graph:
-    #         break
-        
-    #     next_id = re_graph[current_id]
-
-    #     graph[next_id][1] = content[2]
-        
-    #     current_id = next_id
-
 def check_color(content):
     print(graph[content[1]][1])
 
 
-# def total_score(current_id, sel_color, cnt):
-#     global total
+# 각 노드의 색상과 점수가 중복되어 저장되는 문제가 발생
+# 각 노드에대한 색상 저장과 total_score를 구하는 함수를 분리
 
-#     print(f'current_id: {current_id} / sel_color: {sel_color} / cnt: {cnt} / total: {total}')
-    
-#     if graph[current_id][1] != sel_color:
-#         cnt += 1
-
-#     if current_id not in re_graph:
-#         total += (cnt ** 2)
-#         # print(f'current_id: {current_id} / sel_color: {sel_color} / total: {total}')
-#         return
-    
-#     next_id = re_graph[current_id]
-
-#     for id in next_id:
-#         total_score(id, sel_color, cnt)
-
-def total_score(current_id, sel_color):
-    global total, cnt
-
-    print(f'current_id: {current_id} / sel_color: {sel_color} / cnt: {cnt} / total: {total}')
-    
-    if graph[current_id][1] != sel_color:
-        cnt += 1
+# 선택된 노드에 연결된 자식들의 고유 색상을 저장후 반환
+def calculate_value(current_id):
+    colors = set([graph[current_id][1]])
 
     if current_id not in re_graph:
-        # print(f'current_id: {current_id} / sel_color: {sel_color} / total: {total}')
-        return
-    
-    next_id = re_graph[current_id]
+        return colors
 
-    for id in next_id:
-        total_score(id, sel_color)
+    for child_id in re_graph[current_id]:
+        child_colors = calculate_value(child_id)
+        colors.update(child_colors)
+    
+    return colors
+
+# 각 노드에 대한 고유 색상값을 가져와서 점수 계산
+def total_score():
+    total = 0
+    for node_id in graph:
+        value = len(calculate_value(node_id))
+        total += value ** 2
+    return total
 
 Q = int(input())
 
@@ -119,19 +107,7 @@ for content in lst:
         check_color(content)
 
     if content[0] == 400:
-        total = 0
-        # 루트 노드부터 시작
-        current_id = re_graph[-1]
+        print(total_score())
 
-        # 모든 노드에 대해서 dfs를 실행하여 점수를 계산
-        for current_id in graph:
-            cnt = 0
-            sel_color = graph[current_id][1]
-            # 현재 위치한 노드 번호, 초기 색상, 다른 색상의 개수
-            total_score(current_id, sel_color)
-            total += (cnt ** 2)
-        
-        print(total)
-
-print(graph)
-print(re_graph)
+# print(graph)
+# print(re_graph)
