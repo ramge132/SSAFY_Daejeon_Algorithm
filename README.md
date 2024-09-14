@@ -118,20 +118,20 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
 <table>
 <tr>
   <td align="center">
+    <a href="https://github.com/Yeonri">
+      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
+      <sub><b>Yeonri</b></sub>
+    </a>
+    <br />
+    <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/>
+  </td>
+  <td align="center">
     <a href="https://github.com/happypildo">
       <img src="https://avatars.githubusercontent.com/happypildo?v=4" width="100px;" alt=""/><br />
       <sub><b>happypildo</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/>
-  </td>
-  <td align="center">
-    <a href="https://github.com/Yeonri">
-      <img src="https://avatars.githubusercontent.com/Yeonri?v=4" width="100px;" alt=""/><br />
-      <sub><b>Yeonri</b></sub>
-    </a>
-    <br />
-    <img src="https://img.shields.io/badge/LEVEL-3-orange?style=flat-square" alt="Level 3"/>
   </td>
   <td align="center">
     <a href="https://github.com/ramge132">
