@@ -134,17 +134,17 @@ git commit -m "D1 / 홀수만 더하기" -m "2072"
     <img src="https://img.shields.io/badge/LEVEL-4-red?style=flat-square" alt="Level 4"/>
   </td>
   <td align="center">
-    <a href="https://github.com/seokbangguri">
-      <img src="https://avatars.githubusercontent.com/seokbangguri?v=4" width="100px;" alt=""/><br />
-      <sub><b>seokbangguri</b></sub>
+    <a href="https://github.com/ramge132">
+      <img src="https://avatars.githubusercontent.com/ramge132?v=4" width="100px;" alt=""/><br />
+      <sub><b>ramge132</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>
   </td>
   <td align="center">
-    <a href="https://github.com/ramge132">
-      <img src="https://avatars.githubusercontent.com/ramge132?v=4" width="100px;" alt=""/><br />
-      <sub><b>ramge132</b></sub>
+    <a href="https://github.com/seokbangguri">
+      <img src="https://avatars.githubusercontent.com/seokbangguri?v=4" width="100px;" alt=""/><br />
+      <sub><b>seokbangguri</b></sub>
     </a>
     <br />
     <img src="https://img.shields.io/badge/LEVEL-2-brightgreen?style=flat-square" alt="Level 2"/>
